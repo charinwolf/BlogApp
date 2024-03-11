@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Navigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -34,8 +35,17 @@ const Login = () => {
   return (
     <form className='login' onSubmit={login}> 
     <h1>Login</h1>
-      <input type='text' placeholder='username' value={username} onChange={e =>setUsername(e.target.value)} />
-      <input type='password' placeholder='password' value={password} onChange={e => setPassword(e.target.value)} />
+      <input 
+        type='text' 
+        placeholder='username' 
+        value={username} 
+        onChange={e =>setUsername(e.target.value)} />
+
+      <input 
+        type='password' 
+        placeholder='password' 
+        value={password} 
+        onChange={e => setPassword(e.target.value)} />
       <button>Login</button>
     </form>
     )

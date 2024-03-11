@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import { UserContextProvider } from './UserContext';
+import CreatePost from './components/pages/CreatePost';
 
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
         <Route path='/' element={ <Layout /> }>
           <Route index element = { <Home /> } />
           <Route path='/login' element={ <Login /> }/>
-          <Route path='/register' element={ <Register /> }/>     
+          <Route path='/register' element={ <Register /> }/>
+          <Route path='/create' element={ <CreatePost /> } />    
         </Route>      
       </Routes>
     </UserContextProvider>
