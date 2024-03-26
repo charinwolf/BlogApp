@@ -26,7 +26,7 @@ const CreatePost = () => {
   const [summary, setSummary] = useState('');
   const [content, setContent] = useState('');
   const [files, setFiles] = useState('');
-  const [redirect, setRedirect] = useState('false');
+  const [redirect, setRedirect] = useState(false);
 
 
   const newPost = async (e) => {
@@ -40,6 +40,7 @@ const CreatePost = () => {
     const response = await fetch('http://localhost:4000/post', {
       method:'POST',
       body: data,
+      credentials: 'include',
     })
 
     if(response.ok){
@@ -63,7 +64,8 @@ const CreatePost = () => {
         onChange={e => setSummary(e.target.value)} />
       <input type = 'file' 
         onChange={e => setFiles(e.target.files)} />
-      <ReactQuill value={content} 
+      <ReactQuill 
+        value={content} 
         modules={modules} 
         formats={formats} 
         onChange={newValue => setContent(newValue)}

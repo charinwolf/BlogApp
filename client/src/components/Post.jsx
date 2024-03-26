@@ -1,21 +1,28 @@
-import React from 'react'
-import diabloimg from '../assets/diabloimg.jpeg'
+import React from 'react';
+import {format} from 'date-fns'
+import { Link } from 'react-router-dom';
 
-const Post = () => {
+
+
+
+const Post = ({title, summary, cover, content, createdAt, author}) => {
+  
   return (
     <div className='post'>
       <div className="image">
-        <img src={diabloimg} alt='' />
+        <Link to={'/post/id'} > 
+        <img src={'http://localhost:4000/ '+cover} alt='' />
+        </Link>
       </div>
       <div className="texts">
-          <h2>Tres juegos muy queridos de Blizzard aparecen de forma inesperada en Battle.net</h2>
+        <Link to={'/post/id'} >
+          <h2>{title}</h2>
+        </Link>
           <p className="info">
-            <a className="author">RLCH</a>
-            <time>2024-02-01 12:09</time>
+            <a className="author">{author.username}</a>
+            <time>{format(new Date(createdAt), 'MMM d, yyy, HH:mm')}</time>
           </p>
-          <p className='summary'>Aunque la popularidad de ambas sagas ha crecido con el paso de los años, 
-            son muchos los que todavía suspiran pensando en los buenos momentos que han pasado 
-            con las primeras entregas de Diablo o Warcraft.</p>
+          <p className='summary'>{summary}</p>
       </div>
     </div>
   )
