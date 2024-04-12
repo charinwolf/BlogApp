@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { UserContext } from '../UserContext'
 
@@ -29,6 +29,7 @@ const Header = () => {
         <nav>
           { username && (
             <>
+              <span>Hello {username}</span>
               <Link to='/create'>Create New Post</Link>
               <a onClick={logout}>Logout</a> 
             </>
