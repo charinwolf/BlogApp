@@ -9,7 +9,7 @@ Puedes revisar el feed de noticias si solo deseas mantenerte informado y leer lo
  MongoDB · Express.js · React.js · Node.js
 
  <h1>Instalación: </h1>
-1. Clonar el repositorio.
-2. 'npm install' para instalar todas las dependencias.
-3. Carpeta 'API' 'npm start' para iniciar.
-3. Carpeta 'CLIENT' 'npm start' para iniciar.
+1. Clonar el repositorio. <br />
+2. 'npm install' para instalar todas las dependencias. <br />
+3. Carpeta 'API' 'npm start' para iniciar. <br />
+3. Carpeta 'CLIENT' 'npm start' para iniciar. 
