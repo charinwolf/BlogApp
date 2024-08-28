@@ -1,7 +1,9 @@
-<h1 align='center'>BlogApp</h1>>  
+<h1 align='center'>BlogApp</h1>
 
-Desarrolle una aplicación que consiste en un blog de noticias en la que el usuario puede agregar noticias de diversa índole de acuerdo al tópico de su preferencia. La aplicación se diseño utilizando React.js para la parte de Frontend y CSS3 para los estilos. En la parte de Backend utilice Node.js y su framework Express.js, ya que el usuario es capaz de crear, actualizar, postear y borrar artículos desde su cuenta. La aplicación cuenta con un registro e inicio de sesión, por lo que la data se almacena en una base de datos que, en este caso utilice una No-SQL como MongoDBDesarrolle una aplicación que consiste en un blog de noticias en la que el usuario puede agregar noticias de diversa índole de acuerdo al tópico de su preferencia. 
+Se trata de una aplicación para la publicación de cualquier tipo de noticias, siempre respetando la sensibilidad del lector. 
+Esta aplicacion se desarrollo con la finlidad de mantener al internauta al tanto de noticias, o si asi lo desea, el internauta puede compartir notcias que considere importantes o simplemente entretenidas. 
 
+Puedes revisar el feed de noticias si solo deseas mantenerte informado y leer los articulos. 
 
 <h1>Tectnologías:</h1>
  MongoDB · Express.js · React.js · Node.js
